@@ -1,0 +1,16 @@
+---
+- name: Configure nginx web server
+  hosts: test
+  tasks: 
+  - name: epel Installed
+    yum: 
+        name: epel-release
+        state: latest
+  - name: Nginx Installed
+    yum: 
+        name: nginx
+        state: latest
+  - name: Nginx Started
+    service: 
+        name: nginx
+        state: started

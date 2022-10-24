@@ -1,0 +1,8 @@
+---
+# tasks file for create_user
+
+    - name: Create new linux user
+      ansible.builtin.user:
+        name: amr
+        groups: adm,docker
+

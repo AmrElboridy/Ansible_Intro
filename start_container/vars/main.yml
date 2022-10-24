@@ -1,0 +1,4 @@
+---
+# vars file for start_container
+docker_registery: https://index.docker.io/v1/
+docker_username:

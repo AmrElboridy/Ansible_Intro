@@ -1,0 +1,9 @@
+---
+- name: Install python3, docker, docker-compose
+  hosts: test
+  become: yes
+  gather_facts: False
+  roles:
+    - docker_python3_install
+    - create_user
+    - start_container

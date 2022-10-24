@@ -1,0 +1,6 @@
+[test]
+192.168.122.5  
+192.168.122.22
+[test:vars]
+ansible_user=root 
+ansible_password=redhat8
